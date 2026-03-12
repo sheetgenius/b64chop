@@ -577,7 +577,7 @@
         <h2>FAQ</h2>
 
         <div class="faq-item">
-          <div class="faq-q">Is my data sent to a server?</div>
+          <h3 class="faq-q">Is my data sent to a server?</h3>
           <div class="faq-a">
             No. b64chop runs entirely in your browser. Nothing you paste or drop here is ever transmitted
             anywhere. You can load the page, then go offline — it will continue to work.
@@ -585,7 +585,7 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">What is URL-safe Base64 and when do I need it?</div>
+          <h3 class="faq-q">What is URL-safe Base64 and when do I need it?</h3>
           <div class="faq-a">
             Standard Base64 uses <code>+</code> and <code>/</code> which have special meaning in URLs.
             URL-safe Base64 (RFC 4648 §5) replaces them with <code>-</code> and <code>_</code>,
@@ -595,7 +595,7 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">Can I encode binary files, not just text?</div>
+          <h3 class="faq-q">Can I encode binary files, not just text?</h3>
           <div class="faq-a">
             Yes. Click <em>Load file</em> to select any file from your device. b64chop reads it locally
             using the FileReader API and outputs the full Base64 encoding. No upload occurs.
@@ -603,7 +603,7 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">How do I decode a Base64 string back to a file?</div>
+          <h3 class="faq-q">How do I decode a Base64 string back to a file?</h3>
           <div class="faq-a">
             Switch to <em>Decode</em> mode, paste the Base64 string, then click <em>download</em>.
             b64chop decodes the bytes and triggers a file download. Name and MIME type are inferred
@@ -612,7 +612,7 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">Why does my Base64 look different from another tool's output?</div>
+          <h3 class="faq-q">Why does my Base64 look different from another tool's output?</h3>
           <div class="faq-a">
             The most common differences are: (1) URL-safe vs standard variant — check that both tools
             use the same mode; (2) padding — some tools strip the trailing <code>=</code> characters;
@@ -622,7 +622,7 @@
         </div>
 
         <div class="faq-item">
-          <div class="faq-q">How is b64chop different from base64decode.org or base64.guru?</div>
+          <h3 class="faq-q">How is b64chop different from base64decode.org or base64.guru?</h3>
           <div class="faq-a">
             b64chop is ad-free, loads instantly, and never touches a server. The incumbents process
             your data server-side and surround it with advertising. b64chop is also part of the
