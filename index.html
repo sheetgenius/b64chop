@@ -417,6 +417,30 @@
           "@type": "Answer",
           "text": "Base64 encodes binary data as ASCII text so it can be safely transmitted in text-based protocols. Common uses: email attachments (MIME), JWT tokens, data URIs for images, Basic Auth headers, and embedding binary files in JSON or XML."
         }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I decode a Base64 string back to a file?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Switch to Decode mode, paste the Base64 string, then click download. b64chop decodes the bytes and triggers a file download. Name and MIME type are inferred from the content where possible."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why does my Base64 look different from another tool's output?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The most common differences are: (1) URL-safe vs standard variant — check that both tools use the same mode; (2) padding — some tools strip the trailing = characters; (3) line breaks — some tools insert newlines every 76 characters (MIME convention) which b64chop does not."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is b64chop different from base64decode.org or base64.guru?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "b64chop is ad-free, loads instantly, and never touches a server. The incumbents process data server-side and surround it with advertising. b64chop is also part of the -chop family alongside hashchop (SHA hashing) and jwtchop (JWT decoding) — consistent tools for the same developer workflow."
+        }
       }
     ]
   }
