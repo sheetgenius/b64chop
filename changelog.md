@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-03-22
+
+### Improved
+- Migrated API to Hetzner for more reliable hosting
+
+## 2026-03-20
+
+### Improved
+- Added repo-owned deploy scripts and workflow for automated Radicchio deployment
+
 ## 2026-03-18
 
 - Expanded cross-links to include niacin, aidatacenterindex.com, and bankofpapa.com in the related tools section.
