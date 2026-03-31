@@ -1,5 +1,13 @@
 # Changelog
 
+## 2026-03-29
+
+- Added repo-owned Radicchio deploy workflow with automated deploy verification
+
+## 2026-03-27
+
+- Added Bing Webmaster Tools verification file for search indexing
+
 ## 2026-03-22
 
 ### Improved
