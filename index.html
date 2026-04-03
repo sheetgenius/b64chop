@@ -390,62 +390,6 @@
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is my data sent to a server?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "No. b64chop runs entirely in your browser using the built-in btoa/atob APIs and FileReader. Nothing you paste or upload is ever sent to a server."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is URL-safe Base64 and when do I need it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "URL-safe Base64 replaces + with - and / with _, and omits padding = characters. It is used in JWTs, URL parameters, and file names where standard Base64 characters cause issues."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can I encode binary files, not just text?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. Click 'Load file' to select any file. b64chop reads it locally and produces the Base64 output. In decode mode, you can download the decoded bytes as a file."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I decode a Base64 string back to a file?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Switch to Decode mode, paste the Base64 string, then click download. b64chop decodes the bytes and triggers a file download. Name and MIME type are inferred from the content where possible."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why does my Base64 look different from another tool's output?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The most common differences are: (1) URL-safe vs standard variant — check that both tools use the same mode; (2) padding — some tools strip the trailing = characters; (3) line breaks — some tools insert newlines every 76 characters (MIME convention) which b64chop does not."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How is b64chop different from base64decode.org or base64.guru?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "b64chop is ad-free, loads instantly, and never touches a server. The incumbents process data server-side and surround it with advertising. b64chop is also part of the -chop family alongside hashchop (SHA hashing) and jwtchop (JWT decoding) — consistent tools for the same developer workflow."
-        }
-      }
-    ]
-  }
-  </script>
 </head>
 <body>
 
