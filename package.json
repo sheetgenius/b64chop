@@ -1,0 +1,10 @@
+{
+  "name": "b64chop",
+  "private": true,
+  "scripts": {
+    "qa:smoke": "playwright test --config=playwright.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.44.0"
+  }
+}
